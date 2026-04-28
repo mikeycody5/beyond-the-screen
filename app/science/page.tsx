@@ -197,20 +197,20 @@ export default function SciencePage() {
       <section className="border-b-[3px] border-ink bg-pink text-bone">
         <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
           <Sticker color="green" rotate={-4}>
-            Video · Watch
+            Brand Film · 60 sec
           </Sticker>
           <Reveal>
             <h2 className="mt-6 max-w-4xl font-display text-5xl leading-[0.95] md:text-7xl">
-              Why social media is bad
+              From a bored child
               <br />
-              <em className="text-blue">for child development.</em>
+              <em className="text-blue">to a built world.</em>
             </h2>
           </Reveal>
           <Reveal delay={0.2} className="mt-12">
             <div className="relative aspect-video w-full overflow-hidden rounded-[40px] border-[3px] border-ink bg-ink chunky">
               <iframe
-                src="https://www.youtube.com/embed/XM1SelG022A"
-                title="Why Social Media is Bad for Child Development"
+                src="https://www.youtube.com/embed/YV3QuF-2wdw"
+                title="Toys R Us — Beyond the Screen"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="absolute inset-0 h-full w-full"

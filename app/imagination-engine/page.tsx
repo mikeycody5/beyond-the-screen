@@ -6,7 +6,7 @@ import { PodcastPlayer } from "@/components/podcast-player";
 import { FiveStar } from "@/components/star-burst";
 
 export const metadata = {
-  title: "The Imagination Engine — Beyond the Screen",
+  title: "Beyond the Screen — The Podcast",
   description:
     "A podcast for the overstimulated parent. Reclaim the quiet. Rebuild the imagination.",
 };
@@ -27,10 +27,10 @@ export default function PodcastPage() {
         <div className="relative mx-auto max-w-7xl px-5 md:px-8">
           <div className="flex flex-wrap items-center gap-3">
             <Sticker color="pink" rotate={-6}>
-              ★ The Imagination Engine
+              ★ Beyond the Screen
             </Sticker>
             <Sticker color="blue" rotate={4}>
-              Podcast
+              The Podcast
             </Sticker>
           </div>
           <h1 className="mt-10 font-display text-[clamp(3rem,11vw,10rem)] leading-[0.85] text-ink">
@@ -95,8 +95,8 @@ export default function PodcastPage() {
                   <span className="rounded-md bg-orange px-2 py-0.5 font-bold text-ink">
                     &quot;digital babysitter&quot;
                   </span>{" "}
-                  — usually with a short, apologetic laugh. The Imagination
-                  Engine is built for that exact laugh.
+                  — usually with a short, apologetic laugh. Beyond the Screen
+                  is built for that exact laugh.
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
@@ -176,20 +176,22 @@ export default function PodcastPage() {
       <section className="bg-pink text-bone py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-5 text-center md:px-8">
           <Sticker color="green" rotate={-4}>
-            Live recording
+            Weekly podcast
           </Sticker>
           <h2 className="mt-8 font-display text-5xl leading-[0.9] md:text-7xl">
-            Hear an episode
+            Every event…
             <br />
-            recorded <em className="text-pink">live.</em>
+            by the <em className="text-blue">Beyond the Screen</em>
+            <br />
+            <span className="text-orange">podcast.</span>
           </h2>
-          <p className="mt-6 text-lg text-ink-soft md:text-xl">
-            Every Beyond the Screen event ends with a live taping of The
-            Imagination Engine. Your reactions become part of the episode.
+          <p className="mt-6 text-lg text-bone/90 md:text-xl">
+            New episodes drop every week. Sign up for the feed and we&apos;ll
+            send each one straight to your inbox — no live taping required.
           </p>
           <div className="mt-10">
-            <MagneticButton href="/register" color="pink">
-              Reserve your spot
+            <MagneticButton href="/register" color="ink">
+              Sign up
             </MagneticButton>
           </div>
         </div>

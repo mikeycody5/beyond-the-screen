@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, Phone } from "lucide-react";
 import { Marquee } from "@/components/marquee";
 import { Sticker } from "@/components/sticker";
 import { StarBurst, FiveStar } from "@/components/star-burst";
@@ -21,6 +21,22 @@ export default function Home() {
 
   return (
     <>
+      {/* ============ TOP CONTACT BAR ============ */}
+      <section className="border-b-[3px] border-ink bg-ink text-bone">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-5 py-3 text-center md:justify-between md:px-8">
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-orange">
+            ★ Toys &quot;R&quot; Us · Reach the store
+          </p>
+          <a
+            href="tel:7813260112"
+            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-bone transition-colors hover:text-orange"
+          >
+            <Phone size={14} className="text-pink" />
+            781-326-0112
+          </a>
+        </div>
+      </section>
+
       {/* ============ HERO — YELLOW/CREAM with TRU LOGO ============ */}
       <section
         ref={heroRef}
@@ -221,6 +237,32 @@ export default function Home() {
                   <em className="text-blue">consumption.</em>
                 </h2>
               </Reveal>
+
+              {/* iPad-kid photo — drop /public/ipad-kid.jpg in to populate */}
+              <Reveal delay={0.2} className="mt-10">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[32px] border-[3px] border-ink bg-ink chunky">
+                  <Image
+                    src="/ipad-kid.jpg"
+                    alt="A child glued to an iPad — the passive screen-time pattern Beyond the Screen exists to interrupt"
+                    fill
+                    unoptimized
+                    className="object-cover"
+                  />
+                  <div className="absolute left-4 top-4">
+                    <Sticker color="orange" rotate={-6}>
+                      ★ The &quot;iPad kid&quot;
+                    </Sticker>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4 rounded-2xl border-[3px] border-ink bg-bone/95 px-4 py-2 backdrop-blur">
+                    <p className="text-xs font-bold uppercase tracking-widest text-pink">
+                      What we&apos;re replacing
+                    </p>
+                    <p className="mt-1 text-sm font-medium text-ink">
+                      Passive screens out · cognitive play in.
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
             </div>
             <div className="space-y-6 text-lg text-ink md:col-span-7 md:pt-10">
               <Reveal delay={0.15}>
@@ -308,7 +350,7 @@ export default function Home() {
                 text="text-ink"
                 num="02"
                 title="The Podcast."
-                body="The Imagination Engine — a calm, weekly invitation for parents to reclaim the quiet."
+                body="Beyond the Screen — a calm, weekly invitation for parents to reclaim the quiet."
                 cta="Listen to Episode 1"
               />
             </Reveal>
@@ -328,7 +370,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ BRAND FILM — DARK BREAK ============ */}
+      {/* ============ FEATURED VIDEO — DARK BREAK ============ */}
       <section
         id="brand-film"
         className="relative overflow-hidden border-b-[3px] border-ink bg-ink py-24 text-bone md:py-36"
@@ -336,21 +378,21 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 opacity-25 confetti" />
         <div className="relative mx-auto max-w-7xl px-5 md:px-8">
           <Sticker color="pink" rotate={-4}>
-            ★ Brand Film · 60 sec
+            ★ Watch · The case for less screen
           </Sticker>
           <Reveal>
             <h2 className="mt-6 max-w-4xl font-display text-5xl leading-[0.95] md:text-7xl">
-              From a bored child
+              Why social media is bad
               <br />
-              <span className="text-orange">to a built world.</span>
+              <em className="text-orange">for child development.</em>
             </h2>
           </Reveal>
 
           <Reveal delay={0.2} className="mt-12">
             <div className="relative aspect-video w-full overflow-hidden rounded-[40px] border-[3px] border-pink bg-cream chunky">
               <iframe
-                src="https://www.youtube.com/embed/YV3QuF-2wdw"
-                title="Toys R Us — Beyond the Screen"
+                src="https://www.youtube.com/embed/XM1SelG022A"
+                title="Why Social Media is Bad for Child Development"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="absolute inset-0 h-full w-full"
@@ -411,6 +453,58 @@ export default function Home() {
             <div className="pointer-events-none absolute -bottom-16 -left-10 h-72 w-72 opacity-30">
               <div className="h-full w-full rounded-full border-[6px] border-bone" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ STORE BUILDING — VISIT US ============ */}
+      <section className="border-b-[3px] border-ink bg-cream">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
+          <div className="grid gap-10 md:grid-cols-12 md:items-center md:gap-14">
+            <div className="md:col-span-5">
+              <Sticker color="blue" rotate={-4}>
+                Visit us in-store
+              </Sticker>
+              <Reveal>
+                <h2 className="mt-6 font-display text-5xl leading-[0.9] text-ink md:text-7xl">
+                  Come find
+                  <br />
+                  <em className="text-pink">the store.</em>
+                </h2>
+              </Reveal>
+              <p className="mt-6 max-w-md text-lg text-ink-soft">
+                Zero screens. All imagination. The flagship is where the
+                Boredom Initiative comes to life every Saturday.
+              </p>
+              <a
+                href="tel:7813260112"
+                className="mt-8 inline-flex items-center gap-2 rounded-full border-[3px] border-ink bg-bone px-6 py-3 text-sm font-bold uppercase tracking-wide text-ink chunky"
+              >
+                <Phone size={14} className="text-pink" />
+                781-326-0112
+              </a>
+            </div>
+
+            {/* Store building photo — drop /public/store-building.jpg in to populate */}
+            <Reveal delay={0.15} className="md:col-span-7">
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[40px] border-[3px] border-ink bg-ink chunky">
+                <Image
+                  src="/store-building.jpg"
+                  alt="Toys R Us flagship storefront"
+                  fill
+                  unoptimized
+                  className="object-cover"
+                />
+                <div className="absolute bottom-4 left-4 right-4 rounded-2xl border-[3px] border-ink bg-bone/95 px-5 py-3 backdrop-blur md:left-auto md:right-4 md:max-w-xs">
+                  <p className="text-xs font-bold uppercase tracking-widest text-pink">
+                    Flagship · Open daily
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-ink">
+                    Geoffrey lives here.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>

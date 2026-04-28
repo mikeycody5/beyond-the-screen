@@ -19,7 +19,7 @@ export function PodcastPlayer() {
         <div className="relative h-28 w-28 flex-none overflow-hidden rounded-[28px] border-[3px] border-ink bg-pink md:h-36 md:w-36">
           <div className="absolute inset-0 bg-gradient-to-br from-pink to-orange" />
           <div className="absolute inset-0 flex items-center justify-center font-display text-4xl text-bone md:text-6xl">
-            IE
+            BTS
           </div>
         </div>
         <div className="flex-1">
@@ -30,7 +30,7 @@ export function PodcastPlayer() {
             Reclaiming the Quiet
           </h3>
           <p className="mt-2 text-sm font-medium text-ink-soft">
-            The Imagination Engine · 5 min · Hosted by Shaylyn Kerrigan
+            Beyond the Screen · 5 min · Hosted by Shaylyn Kerrigan
           </p>
         </div>
       </div>

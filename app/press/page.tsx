@@ -140,6 +140,97 @@ export default function PressPage() {
         </div>
       </section>
 
+      {/* INFOGRAPHIC — BY THE NUMBERS */}
+      <section className="border-b-[3px] border-ink bg-bone">
+        <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
+          <div className="flex flex-wrap items-center gap-3">
+            <Sticker color="pink" rotate={-6}>
+              ★ Infographic
+            </Sticker>
+            <Sticker color="blue" rotate={4}>
+              The Boredom Initiative · by the numbers
+            </Sticker>
+          </div>
+
+          <Reveal>
+            <h2 className="mt-8 max-w-4xl font-display text-5xl leading-[0.95] text-ink md:text-7xl">
+              The numbers behind
+              <br />
+              <em className="text-pink">the reboot.</em>
+            </h2>
+          </Reveal>
+
+          {/* HEADLINE STATS */}
+          <div className="mt-14 grid gap-5 md:grid-cols-4">
+            {[
+              { stat: "0", label: "Screens in flagship stores", color: "bg-ink text-bone", accent: "text-orange" },
+              { stat: "100%", label: "DMN-approved toy curation", color: "bg-pink text-bone", accent: "text-orange" },
+              { stat: "30 min", label: "Parent lecture per event", color: "bg-blue text-bone", accent: "text-orange" },
+              { stat: "52", label: "Analog Saturdays a year", color: "bg-orange text-ink", accent: "text-pink" },
+            ].map((s, i) => (
+              <Reveal key={s.label} delay={i * 0.08}>
+                <div className={`relative flex h-full flex-col justify-between overflow-hidden rounded-[32px] border-[3px] border-ink ${s.color} chunky p-8 min-h-[220px]`}>
+                  <span className={`font-display text-7xl leading-none md:text-8xl ${s.accent}`}>
+                    {s.stat}
+                  </span>
+                  <p className="mt-6 text-sm font-bold uppercase tracking-wide opacity-90">
+                    {s.label}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* PASSIVE → ACTIVE FLOW */}
+          <div className="mt-14 grid gap-0 overflow-hidden rounded-[40px] border-[3px] border-ink chunky md:grid-cols-[1fr_auto_1fr] md:items-stretch">
+            <div className="border-b-[3px] border-ink bg-ink p-10 text-bone md:border-b-0 md:border-r-[3px]">
+              <p className="text-xs font-bold uppercase tracking-widest text-orange">
+                Before
+              </p>
+              <h3 className="mt-3 font-display text-4xl">Passive screen time</h3>
+              <ul className="mt-6 space-y-2 text-sm text-bone/85">
+                <li>· Algorithm-driven attention</li>
+                <li>· Default Mode Network goes quiet</li>
+                <li>· Consumption &gt; creation</li>
+              </ul>
+            </div>
+            <div className="flex items-center justify-center bg-orange px-6 py-8 md:py-0">
+              <ArrowRight size={56} className="text-ink" />
+            </div>
+            <div className="bg-green p-10 text-ink">
+              <p className="text-xs font-bold uppercase tracking-widest text-pink">
+                After
+              </p>
+              <h3 className="mt-3 font-display text-4xl">Cognitive play</h3>
+              <ul className="mt-6 space-y-2 text-sm text-ink/85">
+                <li>· Open-ended materials</li>
+                <li>· DMN lights up · imagination assembles</li>
+                <li>· Creation &gt; consumption</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* TIMELINE RIBBON */}
+          <div className="mt-14 grid gap-5 md:grid-cols-4">
+            {[
+              { date: "APR 2026", label: "Initiative announced", color: "bg-pink text-bone" },
+              { date: "MAY 2026", label: "First Analog Saturday", color: "bg-orange text-ink" },
+              { date: "JUN 2026", label: "Pilot stores open", color: "bg-blue text-bone" },
+              { date: "FALL 2026", label: "National rollout", color: "bg-green text-ink" },
+            ].map((t, i) => (
+              <Reveal key={t.date} delay={i * 0.06}>
+                <div className={`flex h-full flex-col justify-between rounded-[28px] border-[3px] border-ink ${t.color} chunky p-6`}>
+                  <p className="font-display text-2xl">{t.date}</p>
+                  <p className="mt-3 text-sm font-bold uppercase tracking-wide opacity-90">
+                    {t.label}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SOCIAL */}
       <section className="bg-green py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
