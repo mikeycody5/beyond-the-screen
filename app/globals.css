@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
+@theme {
+  /* Toys "R" Us brand palette — primary play */
+  --color-pink: #ec1f5c;
+  --color-pink-deep: #c0184a;
+  --color-green: #75be45;
+  --color-green-deep: #5ea033;
+  --color-blue: #1c63af;
+  --color-blue-deep: #134a86;
+  --color-orange: #f58220;
+  --color-orange-deep: #d56a10;
+  --color-bone: #faf6ee;
+  --color-cream: #f4ecd8;
+  --color-ink: #111111;
+  --color-ink-soft: #4a4a4a;
+
+  /* Fonts wired via next/font in layout.tsx */
+  --font-display: var(--font-abril);
+  --font-sans: var(--font-poppins);
+
+  /* Motion */
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-breathe: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Marquee */
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-marquee-slow: marquee 60s linear infinite;
+  --animate-spin-slow: spin 18s linear infinite;
+  --animate-bounce-soft: bounce-soft 3.5s ease-in-out infinite;
+  --animate-wobble: wobble 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-bone);
+  --foreground: var(--color-ink);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background: var(--background);
+  color: var(--foreground);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--color-pink);
+  color: var(--color-bone);
+}
+
+/* Custom scrollbar — playful */
+::-webkit-scrollbar { width: 14px; }
+::-webkit-scrollbar-track { background: var(--color-bone); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink);
+  border: 3px solid var(--color-bone);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-pink-deep); }
+
+/* Reusable utility for chunky outline */
+.chunky {
+  border: 3px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
+  transition: transform 0.3s var(--ease-bounce), box-shadow 0.3s var(--ease-bounce);
+}
+.chunky:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--color-ink);
+}
+.chunky:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--color-ink);
+}
+
+/* Hide horizontal scrollbar from marquee */
+.marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent);
+}
+
+/* Confetti dot grid background */
+.confetti {
+  background-image:
+    radial-gradient(circle at 25% 25%, var(--color-pink) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, var(--color-green) 2px, transparent 2px),
+    radial-gradient(circle at 75% 25%, var(--color-blue) 2px, transparent 2px),
+    radial-gradient(circle at 25% 75%, var(--color-orange) 2px, transparent 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px, 40px 0, 0 40px;
+}
+
+/* Squiggle underline */
+.squiggle {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 12' preserveAspectRatio='none'><path d='M0 6 Q 10 0 20 6 T 40 6 T 60 6 T 80 6' stroke='%23ec1f5c' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 80px 12px;
+  padding-bottom: 14px;
 }
