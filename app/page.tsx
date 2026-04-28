@@ -126,19 +126,30 @@ export default function Home() {
           <Reveal delay={0.8} className="mt-20 md:mt-24">
             <div className="relative grid grid-cols-12 gap-4">
               <div className="col-span-12 md:col-span-8">
-                <div className="relative h-[420px] overflow-hidden rounded-[40px] border-[3px] border-ink bg-blue chunky">
+                <div className="relative h-[480px] overflow-hidden rounded-[40px] border-[3px] border-ink bg-blue chunky md:h-[520px]">
                   <Image
-                    src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=1600&q=80"
-                    alt="A child building with wooden blocks"
+                    src="/event-inside.jpg"
+                    alt="Inside a Beyond the Screen event: kids meeting Geoffrey at a new toy launch, parents in a Default Mode Network lecture, kids in the play zone, parents at the workshop sign-up table"
                     fill
                     unoptimized
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute left-6 top-6">
+                  <div className="absolute left-6 top-6 flex flex-col gap-3">
                     <Sticker color="orange" rotate={-8}>
-                      ★ LIVE EVENT
+                      ★ Inside the Event
                     </Sticker>
+                    <Sticker color="green" rotate={4}>
+                      4 stations · 1 afternoon
+                    </Sticker>
+                  </div>
+                  <div className="absolute bottom-6 left-6 right-6 rounded-2xl border-[3px] border-ink bg-bone/95 px-5 py-3 backdrop-blur">
+                    <p className="text-xs font-bold uppercase tracking-widest text-pink">
+                      What you walk into
+                    </p>
+                    <p className="mt-1 text-sm font-medium text-ink">
+                      Geoffrey&apos;s toy launch · DMN lecture · kids&apos; play zone · workshop sign-up
+                    </p>
                   </div>
                 </div>
               </div>
