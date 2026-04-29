@@ -142,6 +142,14 @@ export default function Home() {
           <Reveal delay={0.8} className="mt-20 md:mt-24">
             <div className="relative grid grid-cols-12 gap-4">
               <div className="col-span-12 md:col-span-8">
+                <div className="mb-4 flex flex-wrap items-center gap-3">
+                  <Sticker color="orange" rotate={-8}>
+                    ★ Inside the Event
+                  </Sticker>
+                  <Sticker color="green" rotate={4}>
+                    4 stations · 1 afternoon
+                  </Sticker>
+                </div>
                 <div className="relative h-[480px] overflow-hidden rounded-[40px] border-[3px] border-ink bg-blue chunky md:h-[520px]">
                   <Image
                     src="/event-inside.jpg"
@@ -151,14 +159,6 @@ export default function Home() {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute left-6 top-6 flex flex-col gap-3">
-                    <Sticker color="orange" rotate={-8}>
-                      ★ Inside the Event
-                    </Sticker>
-                    <Sticker color="green" rotate={4}>
-                      4 stations · 1 afternoon
-                    </Sticker>
-                  </div>
                   <div className="absolute bottom-6 left-6 right-6 rounded-2xl border-[3px] border-ink bg-bone/95 px-5 py-3 backdrop-blur">
                     <p className="text-xs font-bold uppercase tracking-widest text-pink">
                       What you walk into
