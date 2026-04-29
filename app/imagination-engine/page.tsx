@@ -1,6 +1,6 @@
 import { Sticker } from "@/components/sticker";
 import { Reveal } from "@/components/reveal";
-import { Marquee } from "@/components/marquee";
+import { Marquee, MARQUEE_WORDS } from "@/components/marquee";
 import { MagneticButton } from "@/components/magnetic-button";
 import { PodcastPlayer } from "@/components/podcast-player";
 import { FiveStar } from "@/components/star-burst";
@@ -57,7 +57,7 @@ export default function PodcastPage() {
       {/* MARQUEE */}
       <section className="border-b-[3px] border-ink bg-pink py-4 text-bone">
         <Marquee>
-          {["RECLAIM THE QUIET", "PUT THE PHONE DOWN", "BREATHE", "NOTHING IS THE POINT"].map((w, i) => (
+          {MARQUEE_WORDS.map((w, i) => (
             <span
               key={i}
               className="flex items-center gap-8 font-display text-3xl uppercase md:text-5xl"

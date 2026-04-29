@@ -1,15 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Marquee } from "@/components/marquee";
+import { Marquee, MARQUEE_WORDS } from "@/components/marquee";
 import { FiveStar } from "@/components/star-burst";
 
-const footerWords = [
-  "BEYOND THE SCREEN",
-  "ANALOG SATURDAY",
-  "THE BOREDOM INITIATIVE",
-  "RECLAIM THE QUIET",
-  "BUILD A WORLD",
-];
+const footerWords = MARQUEE_WORDS;
 
 export function Footer() {
   return (

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight, Play, Phone } from "lucide-react";
-import { Marquee } from "@/components/marquee";
+import { Marquee, MARQUEE_WORDS } from "@/components/marquee";
 import { Sticker } from "@/components/sticker";
 import { StarBurst, FiveStar } from "@/components/star-burst";
 import { Reveal } from "@/components/reveal";
@@ -198,14 +198,7 @@ export default function Home() {
       {/* ============ MARQUEE BAND PINK ============ */}
       <section className="border-b-[3px] border-ink bg-pink py-5 text-bone">
         <Marquee>
-          {[
-            "BEYOND THE SCREEN",
-            "ANALOG SATURDAY",
-            "THE BOREDOM INITIATIVE",
-            "0 IPADS",
-            "100% IMAGINATION",
-            "JOIN THE PLAY COUNCIL",
-          ].map((w, i) => (
+          {MARQUEE_WORDS.map((w, i) => (
             <span
               key={i}
               className="flex items-center gap-8 font-display text-4xl uppercase md:text-6xl"

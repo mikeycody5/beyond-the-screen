@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Sticker } from "@/components/sticker";
-import { Marquee } from "@/components/marquee";
+import { Marquee, MARQUEE_WORDS } from "@/components/marquee";
 import { Reveal } from "@/components/reveal";
 import { MagneticButton } from "@/components/magnetic-button";
 import { FiveStar } from "@/components/star-burst";
@@ -69,7 +69,7 @@ export default function SciencePage() {
       {/* MARQUEE */}
       <section className="border-b-[3px] border-ink bg-orange py-4">
         <Marquee speed="slow">
-          {["DEFAULT MODE NETWORK", "DAYDREAM = DEVELOPMENT", "BOREDOM = BUILDING", "PLAY = THE POINT"].map((w, i) => (
+          {MARQUEE_WORDS.map((w, i) => (
             <span
               key={i}
               className="flex items-center gap-8 font-display text-3xl uppercase text-ink md:text-5xl"

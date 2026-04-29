@@ -1,7 +1,7 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Sticker } from "@/components/sticker";
 import { Reveal } from "@/components/reveal";
-import { Marquee } from "@/components/marquee";
+import { Marquee, MARQUEE_WORDS } from "@/components/marquee";
 import { MagneticButton } from "@/components/magnetic-button";
 import { FiveStar } from "@/components/star-burst";
 
@@ -48,7 +48,7 @@ export default function PressPage() {
       {/* MARQUEE */}
       <section className="border-b-[3px] border-ink bg-pink py-4 text-bone">
         <Marquee speed="slow">
-          {["FOR IMMEDIATE RELEASE", "ANALOG SATURDAY", "DMN-APPROVED", "THE BOREDOM INITIATIVE"].map((w, i) => (
+          {MARQUEE_WORDS.map((w, i) => (
             <span
               key={i}
               className="flex items-center gap-8 font-display text-3xl uppercase md:text-5xl"

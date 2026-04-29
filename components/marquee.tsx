@@ -1,5 +1,14 @@
 import { cn } from "@/lib/utils";
 
+export const MARQUEE_WORDS = [
+  "DEFAULT MODE NETWORK",
+  "BOREDOM = BRAIN ACTIVITY",
+  "BOREDOM INITIATIVE",
+  "100% IMAGINATION",
+  "TOYS \"R\" US",
+  "DMN-APPROVED",
+];
+
 export function Marquee({
   children,
   className,
