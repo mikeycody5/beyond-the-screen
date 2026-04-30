@@ -12,13 +12,13 @@ export function PodcastPlayer() {
         </div>
         <div className="flex-1">
           <p className="text-xs font-bold uppercase tracking-widest text-pink">
-            Episode 01
+            New episode
           </p>
           <h3 className="mt-1 font-display text-3xl text-ink md:text-4xl">
-            Reclaiming the Quiet
+            Beyond the Screen Ep 1
           </h3>
           <p className="mt-2 text-sm font-medium text-ink-soft">
-            Beyond the Screen · Hosted by Shaylyn Kerrigan
+            Hosted by Shaylyn Kerrigan
           </p>
         </div>
       </div>

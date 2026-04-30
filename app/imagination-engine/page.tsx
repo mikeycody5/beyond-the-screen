@@ -36,7 +36,7 @@ export default function PodcastPage() {
                   The Podcast
                 </Sticker>
               </div>
-              <h1 className="mt-10 font-display text-[clamp(3rem,9vw,8rem)] leading-[0.85] text-ink">
+              <h1 className="mt-10 break-words font-display text-[clamp(2.5rem,6.5vw,5.25rem)] leading-[0.9] text-ink">
                 For the
                 <br />
                 <em className="text-pink">overstimulated</em>

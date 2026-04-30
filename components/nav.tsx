@@ -13,6 +13,7 @@ const links = [
   { href: "/science", label: "Science", color: "blue" },
   { href: "/imagination-engine", label: "Podcast", color: "green" },
   { href: "/press", label: "Press", color: "orange" },
+  { href: "/science/blog/more-than-entertainment", label: "Blog", color: "pink" },
 ];
 
 const colorMap: Record<string, string> = {
@@ -116,7 +117,8 @@ export function Nav() {
                   i === 0 && "bg-pink text-bone",
                   i === 1 && "bg-blue text-bone",
                   i === 2 && "bg-green text-ink",
-                  i === 3 && "bg-orange text-ink"
+                  i === 3 && "bg-orange text-ink",
+                  i === 4 && "bg-pink text-bone"
                 )}
               >
                 {link.label}
