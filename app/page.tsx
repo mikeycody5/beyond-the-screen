@@ -262,25 +262,37 @@ export default function Home() {
                 <p className="text-xl md:text-2xl">
                   In today&apos;s digital-first world, many children&apos;s
                   worlds have a digital screen instead of the comfort of
-                  nature and backyard. The{" "}
+                  nature and backyard. We see it everywhere: the{" "}
                   <span className="rounded-md bg-orange px-2 py-0.5 font-bold">
                     &quot;iPad kid&quot;
                   </span>{" "}
-                  phenomenon glues eyes to rapid-fire algorithms and
-                  blue-light stimulation.
+                  phenomenon where eyes are glued to rapid-fire algorithms
+                  and blue-light stimulation. Well, the digital tools offer a
+                  babysitter to take a break and allow the child to get
+                  stimulation from the iPad, they often bypass the most
+                  critical development phase of a child&apos;s life. When a
+                  child&apos;s attention is captured early on by a pre-program
+                  app, the brain enters a state of passive consumption and
+                  ultimately it silences their inner voice that drives a
+                  curiosity and exploration in life.
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <p>
                   At Toys &quot;R&quot; Us, we are leading a movement to go
                   beyond the screen. The goal from the beginning was not only
-                  to sell toys — it was to provide raw material for a
-                  child&apos;s future. We&apos;re shifting our focus to{" "}
+                  to sell toys, but to provide raw material for a child&apos;s
+                  future. By shifting our focus to{" "}
                   <span className="squiggle font-bold text-pink">
                     cognitive play
                   </span>
-                  : open-ended tools like wooden blocks, clay, or complex
-                  puzzles that bring children back into the physical world.
+                  , we want to use open, ended tools like wooden blocks clay,
+                  or complex puzzles to bring children back into the physical
+                  world and allow their brain to work more. This is ultimately
+                  where the magic happens, a cardboard box becomes a rocket
+                  ship and a pile of clay becomes a new species. We are here
+                  to help your children, reclaim their focus, and help their
+                  imagination grow every day.
                 </p>
               </Reveal>
               <Reveal delay={0.45}>
