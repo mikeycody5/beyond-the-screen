@@ -144,16 +144,16 @@ export default function Home() {
               <div className="col-span-12 md:col-span-8">
                 <div className="mb-4 flex flex-wrap items-center gap-3">
                   <Sticker color="orange" rotate={-8}>
-                    ★ Geoffrey is back
+                    ★ Inside the Event
                   </Sticker>
                   <Sticker color="green" rotate={4}>
-                    Visit the flagship
+                    4 stations · 1 afternoon
                   </Sticker>
                 </div>
                 <div className="relative h-[480px] overflow-hidden rounded-[40px] border-[3px] border-ink bg-blue chunky md:h-[520px]">
                   <Image
-                    src="/Toysrusstore.png"
-                    alt="Inside the Toys R Us flagship: Geoffrey the Giraffe greeting visitors next to the toy aisle"
+                    src="/event-inside.jpg"
+                    alt="Inside a Beyond the Screen event: kids meeting Geoffrey at a new toy launch, parents in a Default Mode Network lecture, kids in the play zone, parents at the workshop sign-up table"
                     fill
                     unoptimized
                     className="object-cover"
@@ -161,7 +161,7 @@ export default function Home() {
                   />
                   <div className="absolute bottom-6 left-6 right-6 rounded-2xl border-[3px] border-ink bg-bone/95 px-5 py-3 backdrop-blur">
                     <p className="text-xs font-bold uppercase tracking-widest text-pink">
-                      Walk right in
+                      What you walk into
                     </p>
                     <p className="mt-1 text-sm font-medium text-ink">
                       Geoffrey&apos;s toy launch · DMN lecture · kids&apos; play zone · workshop sign-up
@@ -216,7 +216,7 @@ export default function Home() {
           <StarBurst className="h-full w-full text-bone" spin points={16} />
         </div>
         <div className="relative mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-36">
-          <div className="grid gap-12 md:grid-cols-12">
+          <div className="grid gap-12 md:grid-cols-12 md:items-start">
             <div className="md:col-span-5">
               <Sticker color="pink" rotate={-6}>
                 The Manifesto
@@ -230,33 +230,16 @@ export default function Home() {
                   <em className="text-blue">consumption.</em>
                 </h2>
               </Reveal>
-
-              <Reveal delay={0.2} className="mt-10">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[32px] border-[3px] border-ink bg-ink chunky">
-                  <Image
-                    src="/ipadkidimage.png"
-                    alt="A child glued to an iPad — the passive screen-time pattern Beyond the Screen exists to interrupt"
-                    fill
-                    unoptimized
-                    className="object-cover"
-                  />
-                  <div className="absolute left-4 top-4">
-                    <Sticker color="orange" rotate={-6}>
-                      ★ The &quot;iPad kid&quot;
-                    </Sticker>
-                  </div>
-                  <div className="absolute bottom-4 left-4 right-4 rounded-2xl border-[3px] border-ink bg-bone/95 px-4 py-2 backdrop-blur">
-                    <p className="text-xs font-bold uppercase tracking-widest text-pink">
-                      What we&apos;re replacing
-                    </p>
-                    <p className="mt-1 text-sm font-medium text-ink">
-                      Passive screens out · cognitive play in.
-                    </p>
-                  </div>
+              <Reveal delay={0.45}>
+                <div className="mt-8 inline-flex items-center gap-3 rounded-full border-[3px] border-ink bg-bone px-5 py-3 chunky">
+                  <span className="font-display text-3xl text-ink">2026</span>
+                  <span className="text-sm font-bold uppercase tracking-widest text-pink">
+                    The Reboot Year
+                  </span>
                 </div>
               </Reveal>
             </div>
-            <div className="space-y-6 text-lg text-ink md:col-span-7 md:pt-10">
+            <div className="space-y-6 text-lg text-ink md:col-span-7 md:pt-4">
               <Reveal delay={0.15}>
                 <p className="text-xl md:text-2xl">
                   In today&apos;s digital-first world, many children&apos;s
@@ -269,16 +252,34 @@ export default function Home() {
                   and blue-light stimulation.
                 </p>
               </Reveal>
-              <Reveal delay={0.45}>
-                <div className="mt-8 inline-flex items-center gap-3 rounded-full border-[3px] border-ink bg-bone px-5 py-3 chunky">
-                  <span className="font-display text-3xl text-ink">2026</span>
-                  <span className="text-sm font-bold uppercase tracking-widest text-pink">
-                    The Reboot Year
-                  </span>
-                </div>
-              </Reveal>
             </div>
           </div>
+
+          {/* iPad-kid hero band — full width below the text row */}
+          <Reveal delay={0.3} className="mt-16">
+            <div className="relative h-[320px] w-full overflow-hidden rounded-[32px] border-[3px] border-ink bg-ink chunky md:h-[420px]">
+              <Image
+                src="/ipadkidimage.png"
+                alt="A child glued to an iPad — the passive screen-time pattern Beyond the Screen exists to interrupt"
+                fill
+                unoptimized
+                className="object-cover"
+              />
+              <div className="absolute left-6 top-6">
+                <Sticker color="orange" rotate={-6}>
+                  ★ The &quot;iPad kid&quot;
+                </Sticker>
+              </div>
+              <div className="absolute bottom-6 left-6 right-6 rounded-2xl border-[3px] border-ink bg-bone/95 px-5 py-3 backdrop-blur md:right-auto md:max-w-md">
+                <p className="text-xs font-bold uppercase tracking-widest text-pink">
+                  What we&apos;re replacing
+                </p>
+                <p className="mt-1 text-sm font-medium text-ink">
+                  Passive screens out · cognitive play in.
+                </p>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -450,8 +451,8 @@ export default function Home() {
               <em className="text-orange">science.</em>
             </h3>
             <p className="mt-8 max-w-md text-lg text-bone/95">
-              A 30-minute, jargon-free intro to the Default Mode Network.
-              Why boredom builds a better brain — for your kid, and for you.
+              A 30 minute, jargon free intro to the Default Mode Network.
+              Why boredom builds a better brain for your kid, and for you.
             </p>
             <div className="pointer-events-none absolute -bottom-16 -left-10 h-72 w-72 opacity-30">
               <div className="h-full w-full rounded-full border-[6px] border-bone" />

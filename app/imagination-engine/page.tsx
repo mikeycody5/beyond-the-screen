@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Sticker } from "@/components/sticker";
 import { Reveal } from "@/components/reveal";
 import { Marquee, MARQUEE_WORDS } from "@/components/marquee";
@@ -25,29 +26,50 @@ export default function PodcastPage() {
       <section className="relative overflow-hidden border-b-[3px] border-ink bg-green py-20 md:py-32">
         <div className="pointer-events-none absolute inset-0 opacity-20 confetti" />
         <div className="relative mx-auto max-w-7xl px-5 md:px-8">
-          <div className="flex flex-wrap items-center gap-3">
-            <Sticker color="pink" rotate={-6}>
-              ★ Beyond the Screen
-            </Sticker>
-            <Sticker color="blue" rotate={4}>
-              The Podcast
-            </Sticker>
+          <div className="grid gap-12 md:grid-cols-12 md:items-center">
+            <div className="md:col-span-7">
+              <div className="flex flex-wrap items-center gap-3">
+                <Sticker color="pink" rotate={-6}>
+                  ★ Beyond the Screen
+                </Sticker>
+                <Sticker color="blue" rotate={4}>
+                  The Podcast
+                </Sticker>
+              </div>
+              <h1 className="mt-10 font-display text-[clamp(3rem,9vw,8rem)] leading-[0.85] text-ink">
+                For the
+                <br />
+                <em className="text-pink">overstimulated</em>
+                <br />
+                <span className="text-blue">parent.</span>
+              </h1>
+              <p className="mt-10 max-w-2xl text-xl text-ink md:text-2xl">
+                We know the modern parent&apos;s struggle because we live it
+                too. There is an immense amount of{" "}
+                <span className="rounded-md bg-orange px-2 py-0.5 font-bold">
+                  &quot;digital guilt&quot;
+                </span>{" "}
+                associated with parenting in 2026.
+              </p>
+            </div>
+            <div className="md:col-span-5">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[40px] border-[3px] border-ink bg-blue chunky">
+                <Image
+                  src="/Toysrusstore.png"
+                  alt="Geoffrey the Giraffe greeting visitors at the Toys R Us flagship"
+                  fill
+                  unoptimized
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute left-4 top-4">
+                  <Sticker color="orange" rotate={-6}>
+                    ★ Geoffrey is back
+                  </Sticker>
+                </div>
+              </div>
+            </div>
           </div>
-          <h1 className="mt-10 font-display text-[clamp(3rem,11vw,10rem)] leading-[0.85] text-ink">
-            For the
-            <br />
-            <em className="text-pink">overstimulated</em>
-            <br />
-            <span className="text-blue">parent.</span>
-          </h1>
-          <p className="mt-10 max-w-2xl text-xl text-ink md:text-2xl">
-            We know the modern parent&apos;s struggle because we live it
-            too. There is an immense amount of{" "}
-            <span className="rounded-md bg-orange px-2 py-0.5 font-bold">
-              &quot;digital guilt&quot;
-            </span>{" "}
-            associated with parenting in 2026.
-          </p>
         </div>
       </section>
 
@@ -125,23 +147,6 @@ export default function PodcastPage() {
         </div>
       </section>
 
-      {/* TECHNIQUE NOTE */}
-      <section className="border-b-[3px] border-ink bg-blue py-24 text-bone md:py-32">
-        <div className="mx-auto max-w-5xl px-5 md:px-8">
-          <Sticker color="orange" rotate={-4}>
-            Technique Note
-          </Sticker>
-          <Reveal>
-            <h2 className="mt-6 font-display text-4xl leading-[0.95] md:text-6xl">
-              We mix ambient grocery-store hum,
-              lo-fi piano, and breath cues into every
-              episode — so your nervous system{" "}
-              <em className="text-orange">regulates while you listen.</em>
-            </h2>
-          </Reveal>
-        </div>
-      </section>
-
       {/* EPISODE LIST BENTO */}
       <section className="border-b-[3px] border-ink bg-orange">
         <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
@@ -206,7 +211,7 @@ export default function PodcastPage() {
           </h2>
           <p className="mt-6 text-lg text-bone/90 md:text-xl">
             New episodes drop every week. Sign up for the feed and we&apos;ll
-            send each one straight to your inbox — no live taping required.
+            send each one straight to your inbox, no live taping required.
           </p>
           <p className="mx-auto mt-6 max-w-2xl text-base italic text-bone/90 md:text-lg">
             Turn the volume down, take a breath, and let&apos;s explore how

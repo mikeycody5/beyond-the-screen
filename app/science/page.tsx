@@ -251,10 +251,9 @@ export default function SciencePage() {
                 More than entertainment.
               </h3>
               <p className="mt-6 text-lg text-ink md:text-xl">
-                Play is the foundation of a child&apos;s growth. Our mission
-                goes beyond selling products — we&apos;re building a
-                community that values creativity, curiosity, and well-being,
-                grounded in the science of the Default Mode Network.
+                Play is the foundation of a child&apos;s growth. We&apos;re
+                building a community that values creativity, curiosity, and
+                well-being.
               </p>
               <div className="mt-8">
                 <MagneticButton
