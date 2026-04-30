@@ -59,9 +59,7 @@ export default function SciencePage() {
             for <span className="text-pink">brilliance.</span>
           </h1>
           <p className="mt-10 max-w-2xl text-xl text-bone/90 md:text-2xl">
-            A short explainer for parents on the brain state that powers
-            imagination — and why we&apos;re building an entire brand around
-            protecting it.
+            To understand the power of play, we have to look at the brain.
           </p>
         </div>
       </section>
@@ -100,25 +98,21 @@ export default function SciencePage() {
             <div className="space-y-6 text-lg text-ink md:col-span-7 md:pt-10">
               <Reveal delay={0.15}>
                 <p className="text-xl md:text-2xl">
-                  The{" "}
+                  As done on a recent podcast, I read about Neuroscientists
+                  identifying a specific neural circuit called the{" "}
                   <span className="bg-orange px-1.5 font-bold text-ink">
-                    Default Mode Network (DMN)
-                  </span>{" "}
-                  is a system in the brain that becomes active when we&apos;re
-                  not focused on a task — when we&apos;re daydreaming,
-                  reflecting, or staring out the window. Despite how passive
-                  it sounds, this state is incredibly active behind the
-                  scenes.
+                    Default Mode Network.
+                  </span>
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <p>
-                  For children, this state is even more important. Kids
-                  aren&apos;t just learning facts — they&apos;re learning how
-                  to <span className="squiggle font-bold text-pink">think.</span>{" "}
-                  Boredom is the moment right before creativity begins. If we
-                  remove that space, we unintentionally remove the
-                  opportunity for those moments to happen.
+                  This network isn&apos;t active when we are focused on a
+                  video game or a mass sheet, instead it lights up when we
+                  rest, our brains and we are either{" "}
+                  <span className="squiggle font-bold text-pink">
+                    daydreaming or are bored.
+                  </span>
                 </p>
               </Reveal>
             </div>
@@ -138,6 +132,14 @@ export default function SciencePage() {
               <br />
               a child does <em className="text-pink">nothing.</em>
             </h2>
+          </Reveal>
+
+          <Reveal delay={0.15} className="mt-8">
+            <p className="max-w-3xl text-lg text-ink md:text-xl">
+              For a child, these moments of stillness are vital and are
+              considered when the brain processes emotions, connects distant
+              ideas, and develops a sense of self identity.
+            </p>
           </Reveal>
 
           <div className="mt-16 grid gap-5 md:grid-cols-2">
@@ -205,6 +207,14 @@ export default function SciencePage() {
               <br />
               <em className="text-blue">to a built world.</em>
             </h2>
+          </Reveal>
+          <Reveal delay={0.15} className="mt-8">
+            <p className="max-w-3xl text-lg text-bone/95 md:text-xl">
+              The problem with modern digital entertainment is that it never
+              allows for the default mode network to activate. The constant
+              ping of a notification or the next auto play video keeps the
+              brain in a constant state of external focus.
+            </p>
           </Reveal>
           <Reveal delay={0.2} className="mt-12">
             <div className="relative aspect-video w-full overflow-hidden rounded-[40px] border-[3px] border-ink bg-ink chunky">
@@ -313,9 +323,14 @@ export default function SciencePage() {
             <em className="text-pink">deeper than this page.</em>
           </h2>
           <p className="mt-6 text-lg text-ink-soft md:text-xl">
-            Our hybrid event includes a 30-minute, jargon-free DMN lecture
-            for parents while their kids play. Tickets are free, but
-            limited.
+            Our main goal is to get children out of this and allow for our
+            toys to specifically become triggered to the default mode
+            network. By keeping our children in physical activities and
+            focusing on keeping their brain active, it continuously helps
+            them work on their problem-solving skills. Toys &quot;R&quot; Us
+            specifically is focusing on making our toys a developmental
+            tool, ensuring that the ones we sell are a bridge to a healthier
+            and more imaginative mind.
           </p>
           <div className="mt-10">
             <MagneticButton href="/register" color="pink">
