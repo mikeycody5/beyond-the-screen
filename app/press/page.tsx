@@ -39,8 +39,7 @@ export default function PressPage() {
             <em className="text-pink">Reboot.</em>
           </h1>
           <p className="mt-10 max-w-2xl text-xl text-ink md:text-2xl">
-            How a former big-box retailer became a community resource for
-            childhood development.
+            This act marks a very big shift in the toy and digital world.
           </p>
         </div>
       </section>
@@ -100,11 +99,25 @@ export default function PressPage() {
                 <p className="text-xs font-bold uppercase tracking-widest text-orange">
                   Analysis
                 </p>
-                <p className="mt-3 text-base">
-                  The pivot reflects a broader retail trend: brands moving
-                  from product sellers to mission-led communities. Toys
-                  &quot;R&quot; Us is betting that &quot;wellness for
-                  kids&quot; is the category of the next decade.
+                <blockquote className="mt-4 border-l-[3px] border-orange pl-4 text-base italic">
+                  &ldquo;Listening to the customer is probably the best thing
+                  in the world. Almost all that we have here and now, and how
+                  we expanded the business came from the customer saying
+                  &lsquo;I need.&rsquo; or &lsquo;I want&rdquo;,
+                  <span className="mt-2 block not-italic text-xs font-bold uppercase tracking-widest text-orange">
+                    — CEO Charles Lazarus States
+                  </span>
+                </blockquote>
+                <p className="mt-4 text-base">
+                  By transitioning into a{" "}
+                  <span className="rounded-md bg-orange px-1.5 font-bold text-ink">
+                    &quot;community resource for childhood development,&quot;
+                  </span>{" "}
+                  Toys &quot;R&quot; Us is addressing the competitive
+                  pressure of the digital age head-on. This &quot;reboot&quot;
+                  is as much about public health as it is about profit,
+                  positioning the company as a guardian of the next
+                  generation&apos;s creative capacity.
                 </p>
               </div>
               <div className="rounded-[28px] border-[3px] border-ink bg-blue p-6 text-bone chunky">
@@ -112,9 +125,21 @@ export default function PressPage() {
                   Strategy
                 </p>
                 <p className="mt-3 text-base">
-                  Hybrid in-store events combine free play for children with
-                  a short DMN lecture for parents. Registration is free and
-                  limited per location.
+                  A key component of this initiative is the launch of a
+                  weekly, device-free workshops hosted in-store. These events
+                  will feature massive, unstructured building projects where
+                  families can interact without the interference of
+                  smartphones.
+                </p>
+                <p className="mt-4 text-base">
+                  By curating{" "}
+                  <span className="rounded-md bg-orange px-1.5 font-bold text-ink">
+                    &quot;Default Mode Network-Approved&quot;
+                  </span>{" "}
+                  toy sections, Toys &quot;R&quot; Us is simplifying the
+                  decision-making process for overstimulated parents,
+                  offering a selection of products guaranteed to spark deep,
+                  imaginative play.
                 </p>
               </div>
             </div>
@@ -153,6 +178,17 @@ export default function PressPage() {
               <br />
               <em className="text-pink">the reboot.</em>
             </h2>
+          </Reveal>
+
+          <Reveal delay={0.15} className="mt-8">
+            <p className="max-w-3xl text-lg text-ink md:text-xl">
+              The brand recognizes that its true value lies not in competing
+              with Amazon&apos;s logistics, but in providing an{" "}
+              <span className="squiggle font-bold text-ink">
+                experiential sanctuary
+              </span>{" "}
+              that cannot be replicated online.
+            </p>
           </Reveal>
 
           {/* HEADLINE STATS */}
