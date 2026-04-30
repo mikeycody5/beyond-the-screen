@@ -260,6 +260,44 @@ export default function SciencePage() {
               </div>
             </div>
           </div>
+
+          {/* SECOND BLOG */}
+          <div className="mt-16 grid gap-10 md:grid-cols-12 md:gap-16">
+            <div className="flex flex-col justify-center md:col-span-7 md:order-1">
+              <Sticker color="blue" rotate={-4}>
+                Blog · Mission
+              </Sticker>
+              <h3 className="mt-6 font-display text-4xl text-ink md:text-6xl">
+                More than entertainment.
+              </h3>
+              <p className="mt-6 text-lg text-ink md:text-xl">
+                Play is the foundation of a child&apos;s growth. Our mission
+                goes beyond selling products — we&apos;re building a
+                community that values creativity, curiosity, and well-being,
+                grounded in the science of the Default Mode Network.
+              </p>
+              <div className="mt-8">
+                <MagneticButton
+                  href="/science/blog/more-than-entertainment"
+                  color="ink"
+                  size="md"
+                >
+                  Read the post →
+                </MagneticButton>
+              </div>
+            </div>
+            <div className="md:col-span-5 md:order-2">
+              <div className="relative aspect-square overflow-hidden rounded-[40px] border-[3px] border-ink bg-bone chunky">
+                <Image
+                  src="https://www.toysrus.com/cdn/shop/files/games-and-puzzles.png?v=1747249530&width=1200"
+                  alt="Games and puzzles for cognitive play"
+                  fill
+                  unoptimized
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
