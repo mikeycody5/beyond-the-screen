@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Download } from "lucide-react";
 import { Sticker } from "@/components/sticker";
 import { Reveal } from "@/components/reveal";
@@ -157,6 +158,49 @@ export default function PressPage() {
               </MagneticButton>
             </div>
           </article>
+        </div>
+      </section>
+
+      {/* INFOGRAPHIC — TRU LEGACY */}
+      <section className="border-b-[3px] border-ink bg-cream">
+        <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
+          <div className="flex flex-wrap items-center gap-3">
+            <Sticker color="pink" rotate={-6}>
+              ★ The Story
+            </Sticker>
+            <Sticker color="blue" rotate={4}>
+              78 years of play
+            </Sticker>
+          </div>
+
+          <Reveal>
+            <h2 className="mt-8 max-w-4xl font-display text-5xl leading-[0.95] text-ink md:text-7xl">
+              Where we&apos;ve been,
+              <br />
+              <em className="text-pink">and where we&apos;re going.</em>
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.15} className="mt-8">
+            <p className="max-w-3xl text-lg text-ink md:text-xl">
+              78 years. 1,600 stores at our peak. One legendary giraffe.
+              Here&apos;s the company you grew up with — and the company
+              we&apos;re becoming.
+            </p>
+          </Reveal>
+
+          {/* Legacy infographic — drop /public/toys-r-us-history.jpg in to populate */}
+          <Reveal delay={0.25} className="mt-14 mx-auto max-w-2xl">
+            <div className="relative aspect-[4/10] w-full overflow-hidden rounded-[40px] border-[3px] border-ink bg-bone chunky">
+              <Image
+                src="/toys-r-us-history.jpg"
+                alt="Toys R Us history infographic: founded 78 years ago in Washington D.C., 65,000 employees, 1,600 stores worldwide at its peak, filed for bankruptcy in 2017 with 5 billion in debt and 11.1 billion in annual sales, known as the shop for birthdays / holidays / gift shopping, slogan 'You'll never outgrow us'"
+                fill
+                unoptimized
+                className="object-contain"
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 
