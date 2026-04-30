@@ -161,11 +161,11 @@ export default function PressPage() {
         </div>
       </section>
 
-      {/* INFOGRAPHIC — TRU LEGACY (drop /public/toys-r-us-history.jpg in to populate) */}
+      {/* INFOGRAPHIC — TRU LEGACY */}
       <section className="border-b-[3px] border-ink bg-cream py-16 md:py-24">
         <div className="mx-auto max-w-2xl px-5 md:px-8">
           <Image
-            src="/toys-r-us-history.jpg"
+            src="/toysrusinfographic.png"
             alt="Toys R Us history infographic: founded 78 years ago in Washington D.C., 65,000 employees, 1,600 stores worldwide at its peak, filed for bankruptcy in 2017 with 5 billion in debt and 11.1 billion in annual sales, known as the shop for birthdays / holidays / gift shopping, slogan 'You'll never outgrow us'"
             width={1080}
             height={2700}

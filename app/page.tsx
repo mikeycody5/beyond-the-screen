@@ -144,16 +144,16 @@ export default function Home() {
               <div className="col-span-12 md:col-span-8">
                 <div className="mb-4 flex flex-wrap items-center gap-3">
                   <Sticker color="orange" rotate={-8}>
-                    ★ Inside the Event
+                    ★ Geoffrey is back
                   </Sticker>
                   <Sticker color="green" rotate={4}>
-                    4 stations · 1 afternoon
+                    Visit the flagship
                   </Sticker>
                 </div>
                 <div className="relative h-[480px] overflow-hidden rounded-[40px] border-[3px] border-ink bg-blue chunky md:h-[520px]">
                   <Image
-                    src="/event-inside.jpg"
-                    alt="Inside a Beyond the Screen event: kids meeting Geoffrey at a new toy launch, parents in a Default Mode Network lecture, kids in the play zone, parents at the workshop sign-up table"
+                    src="/Toysrusstore.png"
+                    alt="Inside the Toys R Us flagship: Geoffrey the Giraffe greeting visitors next to the toy aisle"
                     fill
                     unoptimized
                     className="object-cover"
@@ -161,7 +161,7 @@ export default function Home() {
                   />
                   <div className="absolute bottom-6 left-6 right-6 rounded-2xl border-[3px] border-ink bg-bone/95 px-5 py-3 backdrop-blur">
                     <p className="text-xs font-bold uppercase tracking-widest text-pink">
-                      What you walk into
+                      Walk right in
                     </p>
                     <p className="mt-1 text-sm font-medium text-ink">
                       Geoffrey&apos;s toy launch · DMN lecture · kids&apos; play zone · workshop sign-up
@@ -231,11 +231,10 @@ export default function Home() {
                 </h2>
               </Reveal>
 
-              {/* iPad-kid photo — drop /public/ipad-kid.jpg in to populate */}
               <Reveal delay={0.2} className="mt-10">
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[32px] border-[3px] border-ink bg-ink chunky">
                   <Image
-                    src="/ipad-kid.jpg"
+                    src="/ipadkidimage.png"
                     alt="A child glued to an iPad — the passive screen-time pattern Beyond the Screen exists to interrupt"
                     fill
                     unoptimized
@@ -490,11 +489,10 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Store building photo — drop /public/store-building.jpg in to populate */}
             <Reveal delay={0.15} className="md:col-span-7">
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[40px] border-[3px] border-ink bg-ink chunky">
                 <Image
-                  src="/store-building.jpg"
+                  src="/toysrusstore2.png"
                   alt="Toys R Us flagship storefront"
                   fill
                   unoptimized
