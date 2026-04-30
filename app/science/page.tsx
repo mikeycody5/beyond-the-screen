@@ -98,8 +98,8 @@ export default function SciencePage() {
             <div className="space-y-6 text-lg text-ink md:col-span-7 md:pt-10">
               <Reveal delay={0.15}>
                 <p className="text-xl md:text-2xl">
-                  As done on a recent podcast, I read about Neuroscientists
-                  identifying a specific neural circuit called the{" "}
+                  Neuroscientists have identified a specific neural circuit
+                  called the{" "}
                   <span className="bg-orange px-1.5 font-bold text-ink">
                     Default Mode Network.
                   </span>
