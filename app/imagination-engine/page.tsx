@@ -41,8 +41,12 @@ export default function PodcastPage() {
             <span className="text-blue">parent.</span>
           </h1>
           <p className="mt-10 max-w-2xl text-xl text-ink md:text-2xl">
-            A weekly invitation to hit pause. We aren&apos;t competing for
-            your attention — we&apos;re helping you reclaim it.
+            We know the modern parent&apos;s struggle because we live it
+            too. There is an immense amount of{" "}
+            <span className="rounded-md bg-orange px-2 py-0.5 font-bold">
+              &quot;digital guilt&quot;
+            </span>{" "}
+            associated with parenting in 2026.
           </p>
         </div>
       </section>
@@ -90,23 +94,30 @@ export default function PodcastPage() {
             <div className="space-y-6 text-lg text-bone md:col-span-7 md:pt-10">
               <Reveal delay={0.15}>
                 <p className="text-xl md:text-2xl">
-                  Every parent we&apos;ve interviewed in the past year has
-                  used the phrase{" "}
-                  <span className="rounded-md bg-orange px-2 py-0.5 font-bold text-ink">
-                    &quot;digital babysitter&quot;
-                  </span>{" "}
-                  — usually with a short, apologetic laugh. Beyond the Screen
-                  is built for that exact laugh.
+                  Whether it&apos;s the long car ride or the need to finish a
+                  work email, the tablet often feels like the only solution.
+                  Our new podcast,{" "}
+                  <em className="font-bold text-orange">
+                    The Imagination Toys &amp; Tools
+                  </em>
+                  , is designed specifically for you. It&apos;s a resource to
+                  help you navigate the noise and understand that your
+                  child&apos;s boredom isn&apos;t a problem to be solved,
+                  it&apos;s an{" "}
+                  <span className="squiggle font-bold text-ink">
+                    opportunity to be celebrated.
+                  </span>
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <p>
-                  Episodes feature ambient sounds layered under the dialogue,
-                  specifically tuned to help a parent&apos;s nervous system
-                  regulate while they listen. The goal is not just
-                  information. The goal is a calmer parent — because a calmer
-                  parent is the single biggest gift we can give a developing
-                  brain.
+                  Each episode of the podcast is designed to be a{" "}
+                  <span className="rounded-md bg-orange px-2 py-0.5 font-bold text-ink">
+                    &quot;nervous system reset.&quot;
+                  </span>{" "}
+                  We utilize sounds and rhythms to help you regulate your own
+                  stress while we discuss evidence based strategies for a
+                  life of digital minimalism.
                 </p>
               </Reveal>
             </div>
@@ -143,6 +154,14 @@ export default function PodcastPage() {
               <br />
               <em className="text-blue">episodes.</em>
             </h2>
+          </Reveal>
+
+          <Reveal delay={0.15} className="mt-8">
+            <p className="max-w-3xl text-lg text-ink md:text-xl">
+              From boredom challenges, you can do at home to interviews with
+              the child psychologist, the series is your guide to reclaiming
+              the quiet in your house and building your child&apos;s brain.
+            </p>
           </Reveal>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2">
@@ -188,6 +207,13 @@ export default function PodcastPage() {
           <p className="mt-6 text-lg text-bone/90 md:text-xl">
             New episodes drop every week. Sign up for the feed and we&apos;ll
             send each one straight to your inbox — no live taping required.
+          </p>
+          <p className="mx-auto mt-6 max-w-2xl text-base italic text-bone/90 md:text-lg">
+            Turn the volume down, take a breath, and let&apos;s explore how
+            we can help our children and ourselves to find the beauty in the{" "}
+            <span className="rounded-md bg-orange px-2 py-0.5 not-italic font-bold text-ink">
+              &quot;void.&quot;
+            </span>
           </p>
           <div className="mt-10">
             <MagneticButton href="/register" color="ink">
