@@ -65,38 +65,33 @@ export default function PressPage() {
         <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
           <article className="mx-auto max-w-4xl rounded-[40px] border-[3px] border-ink bg-cream chunky p-10 md:p-16">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-pink">
-              For Immediate Release
+              FOR IMMEDIATE RELEASE
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[0.95] md:text-6xl">
-              Toys &quot;R&quot; Us Announces &apos;The Boredom Initiative&apos;:
-              A Pivot Back to Outside Play
+              Toys &quot;R&quot; Us announces &apos;The Boredom
+              Initiative&apos;: A Pivot back to Outside Play
             </h2>
             <p className="mt-3 text-sm font-bold uppercase tracking-wide text-ink-soft">
-              Paramus, NJ · April 24, 2026
+              (Washington, D.C. — April 30th, 2026)
             </p>
 
             <div className="mt-10 space-y-6 text-lg leading-relaxed text-ink">
               <p>
-                Toys &quot;R&quot; Us today announced &quot;The Boredom
-                Initiative,&quot; a multi-year repositioning that recasts the
-                brand from a traditional toy retailer into a community
-                resource for childhood development. New flagship stores will
-                feature zero screens, and the company is partnering with
-                child psychologists to curate{" "}
-                <span className="bg-orange px-1.5 font-bold">
-                  &quot;DMN-Approved&quot;
-                </span>{" "}
-                product sections — toys clinically reviewed for their ability
-                to activate the Default Mode Network.
-              </p>
-              <p>
-                A key component of this initiative is the launch of weekly,
-                device-free workshops hosted in-store. These{" "}
+                Toys &quot;R&quot; Us today announced an exciting release
+                about addressing the attention crisis among children and
+                adults.{" "}
                 <span className="squiggle font-bold text-pink">
-                  Analog Saturday
+                  &quot;The Boredom Initiative,&quot;
                 </span>{" "}
-                events feature massive, unstructured building projects where
-                families interact without the interference of smartphones.
+                is the brand is overhauling its physical and digital
+                footprint to prioritize neurological health over digital
+                distraction. To focus on this reboot, Toys &quot;R&quot; Us
+                Wants to focus on removing all digital demo screens from
+                retail locations and Designing toys with{" "}
+                <span className="bg-orange px-1.5 font-bold">
+                  psychologists
+                </span>{" "}
+                that will ultimately create a better future for our children.
               </p>
             </div>
 
