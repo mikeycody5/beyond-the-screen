@@ -79,6 +79,80 @@ export default function RegisterPage() {
         </div>
       </section>
 
+      {/* MISSION — THE PLAY COUNCIL */}
+      <section className="border-b-[3px] border-ink bg-cream">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
+          <div className="grid gap-12 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <Sticker color="pink" rotate={-6}>
+                ★ The Play Council
+              </Sticker>
+              <h2 className="mt-6 font-display text-5xl leading-[0.9] text-ink md:text-6xl">
+                More than
+                <br />
+                <em className="text-pink">a store.</em>
+              </h2>
+            </div>
+            <div className="space-y-6 text-lg text-ink md:col-span-7 md:pt-4">
+              <p className="text-xl md:text-2xl">
+                We want to prove to the world that we are{" "}
+                <span className="squiggle font-bold text-ink">
+                  more than a store
+                </span>
+                , we are a community of parents, educators, and creators who
+                understand the harm of the digital world. We want to stay
+                connected with families who are on the front lines of this
+                movement. Why do you have a question about new store layouts
+                or you want to share your child stories&apos; creative
+                breakthroughs, either way we want to hear all about it. We
+                are committed to being transparent and an accessible
+                resource for children, overstimulated, parents, and the
+                overall well-being of your family&apos;s journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* THE BOREDOM CHALLENGE */}
+      <section className="border-b-[3px] border-ink bg-green">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
+          <div className="grid gap-12 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <Sticker color="orange" rotate={-6}>
+                ★ The Boredom Challenge
+              </Sticker>
+              <h2 className="mt-6 font-display text-5xl leading-[0.9] text-ink md:text-6xl">
+                One hour
+                <br />
+                of <em className="text-blue">device-free play.</em>
+              </h2>
+            </div>
+            <div className="space-y-6 text-lg text-ink md:col-span-7 md:pt-4">
+              <p className="text-xl md:text-2xl">
+                If you are ready to take the first step, we invite you to
+                join the{" "}
+                <span className="rounded-md bg-orange px-2 py-0.5 font-bold text-ink">
+                  &quot;Boredom Challenge.&quot;
+                </span>{" "}
+                This initiative asks parents to commit to just one hour of
+                device-free play per day. By signing up, you&apos;ll receive
+                a weekly{" "}
+                <span className="rounded-md bg-pink px-2 py-0.5 font-bold text-bone">
+                  &quot;Play Kit&quot;
+                </span>{" "}
+                guide filled with analog activities and exclusive discounts
+                on imagination-fueling toys. I&apos;m Shaylyn Kerrigan, the
+                creator of this initiative and a BSU college student. My
+                mission is to bridge the gap between clinical psychology and
+                brand strategy to ensure that the future of play is bright
+                and intelligence gaining.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-orange py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-5 md:px-8">
           {/* Stepper */}

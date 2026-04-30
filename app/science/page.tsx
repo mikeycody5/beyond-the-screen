@@ -8,9 +8,9 @@ import { MagneticButton } from "@/components/magnetic-button";
 import { FiveStar } from "@/components/star-burst";
 
 export const metadata = {
-  title: "The Science — Beyond the Screen",
+  title: "The Biology of Play — Beyond the Screen",
   description:
-    "A simple breakdown of the Default Mode Network and why boredom is the waiting room for brilliance.",
+    "A simple breakdown of the Default Mode Network and why moments of stillness are vital to a child's brain.",
 };
 
 const dmnFacts = [
@@ -51,12 +51,10 @@ export default function SciencePage() {
               ★ For curious parents
             </Sticker>
           </div>
-          <h1 className="mt-10 font-display text-[clamp(3.5rem,11vw,10rem)] leading-[0.85]">
-            Boredom is
+          <h1 className="mt-10 font-display text-[clamp(3.5rem,12vw,11rem)] leading-[0.85]">
+            The Biology
             <br />
-            the <em className="text-orange">waiting room</em>
-            <br />
-            for <span className="text-pink">brilliance.</span>
+            of <em className="text-pink">Play.</em>
           </h1>
           <p className="mt-10 max-w-2xl text-xl text-bone/90 md:text-2xl">
             To understand the power of play, we have to look at the brain.
@@ -237,8 +235,8 @@ export default function SciencePage() {
             <div className="md:col-span-5">
               <div className="relative aspect-square overflow-hidden rounded-[40px] border-[3px] border-ink bg-bone chunky">
                 <Image
-                  src="https://www.toysrus.com/cdn/shop/files/building-blocks.png?v=1747249302&width=1200"
-                  alt="Building blocks"
+                  src="https://www.toysrus.com/cdn/shop/files/games-and-puzzles.png?v=1747249530&width=1200"
+                  alt="Games and puzzles for cognitive play"
                   fill
                   unoptimized
                   className="object-cover"
@@ -247,34 +245,6 @@ export default function SciencePage() {
             </div>
             <div className="flex flex-col justify-center md:col-span-7">
               <Sticker color="pink" rotate={-4}>
-                Blog · Long Read
-              </Sticker>
-              <h3 className="mt-6 font-display text-4xl text-ink md:text-6xl">
-                The Anatomy of an Imagination Engine Toy.
-              </h3>
-              <p className="mt-6 text-lg text-ink md:text-xl">
-                What makes a toy a true imagination engine? It&apos;s not
-                batteries, screens, or sound effects. It&apos;s the absence
-                of instructions. Four characteristics every parent should
-                look for — and why your kid&apos;s favorite gift might
-                already be in your recycling bin.
-              </p>
-              <div className="mt-8">
-                <MagneticButton
-                  href="/science/blog/imagination-engine-toy"
-                  color="ink"
-                  size="md"
-                >
-                  Read the post →
-                </MagneticButton>
-              </div>
-            </div>
-          </div>
-
-          {/* SECOND BLOG */}
-          <div className="mt-16 grid gap-10 md:grid-cols-12 md:gap-16">
-            <div className="flex flex-col justify-center md:col-span-7 md:order-1">
-              <Sticker color="blue" rotate={-4}>
                 Blog · Mission
               </Sticker>
               <h3 className="mt-6 font-display text-4xl text-ink md:text-6xl">
@@ -294,17 +264,6 @@ export default function SciencePage() {
                 >
                   Read the post →
                 </MagneticButton>
-              </div>
-            </div>
-            <div className="md:col-span-5 md:order-2">
-              <div className="relative aspect-square overflow-hidden rounded-[40px] border-[3px] border-ink bg-bone chunky">
-                <Image
-                  src="https://www.toysrus.com/cdn/shop/files/games-and-puzzles.png?v=1747249530&width=1200"
-                  alt="Games and puzzles for cognitive play"
-                  fill
-                  unoptimized
-                  className="object-cover"
-                />
               </div>
             </div>
           </div>
