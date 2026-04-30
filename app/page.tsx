@@ -267,32 +267,7 @@ export default function Home() {
                     &quot;iPad kid&quot;
                   </span>{" "}
                   phenomenon where eyes are glued to rapid-fire algorithms
-                  and blue-light stimulation. Well, the digital tools offer a
-                  babysitter to take a break and allow the child to get
-                  stimulation from the iPad, they often bypass the most
-                  critical development phase of a child&apos;s life. When a
-                  child&apos;s attention is captured early on by a pre-program
-                  app, the brain enters a state of passive consumption and
-                  ultimately it silences their inner voice that drives a
-                  curiosity and exploration in life.
-                </p>
-              </Reveal>
-              <Reveal delay={0.3}>
-                <p>
-                  At Toys &quot;R&quot; Us, we are leading a movement to go
-                  beyond the screen. The goal from the beginning was not only
-                  to sell toys, but to provide raw material for a child&apos;s
-                  future. By shifting our focus to{" "}
-                  <span className="squiggle font-bold text-pink">
-                    cognitive play
-                  </span>
-                  , we want to use open, ended tools like wooden blocks clay,
-                  or complex puzzles to bring children back into the physical
-                  world and allow their brain to work more. This is ultimately
-                  where the magic happens, a cardboard box becomes a rocket
-                  ship and a pile of clay becomes a new species. We are here
-                  to help your children, reclaim their focus, and help their
-                  imagination grow every day.
+                  and blue-light stimulation.
                 </p>
               </Reveal>
               <Reveal delay={0.45}>
@@ -331,6 +306,21 @@ export default function Home() {
               </p>
             </Reveal>
           </div>
+
+          <Reveal delay={0.3} className="mt-12">
+            <p className="max-w-4xl text-lg text-bone/95 md:text-xl">
+              Well, the digital tools offer a babysitter to take a break and
+              allow the child to get stimulation from the iPad, they often
+              bypass the most critical development phase of a child&apos;s
+              life. When a child&apos;s attention is captured early on by a
+              pre-program app, the brain enters a state of{" "}
+              <span className="rounded-md bg-orange px-2 py-0.5 font-bold text-ink">
+                passive consumption
+              </span>{" "}
+              and ultimately it silences their inner voice that drives a
+              curiosity and exploration in life.
+            </p>
+          </Reveal>
 
           <div className="mt-16 grid gap-5 md:grid-cols-12 md:grid-rows-2">
             <Reveal className="md:col-span-7 md:row-span-2">
@@ -393,6 +383,13 @@ export default function Home() {
             </h2>
           </Reveal>
 
+          <Reveal delay={0.15} className="mt-8">
+            <p className="max-w-3xl text-lg text-bone/90 md:text-xl">
+              At Toys &quot;R&quot; Us, we are leading a movement to go
+              beyond the screen.
+            </p>
+          </Reveal>
+
           <Reveal delay={0.2} className="mt-12">
             <div className="relative aspect-video w-full overflow-hidden rounded-[40px] border-[3px] border-pink bg-cream chunky">
               <iframe
@@ -422,9 +419,11 @@ export default function Home() {
               <em className="text-bone">1996.</em>
             </h3>
             <p className="mt-8 max-w-md text-lg text-bone/95">
-              A supervised play zone with hands-on demos, group activities,
-              and the new Toys &quot;R&quot; Us &quot;DMN-Approved&quot;
-              collection. No screens. All imagination.
+              The goal from the beginning was not only to sell toys, but to
+              provide raw material for a child&apos;s future. By shifting our
+              focus to cognitive play, we want to use open, ended tools like
+              wooden blocks clay, or complex puzzles to bring children back
+              into the physical world and allow their brain to work more.
             </p>
             <div className="pointer-events-none absolute -bottom-10 -right-10 h-64 w-64 opacity-30">
               <StarBurst className="h-full w-full text-bone" spin points={16} />
@@ -478,8 +477,9 @@ export default function Home() {
                 </h2>
               </Reveal>
               <p className="mt-6 max-w-md text-lg text-ink-soft">
-                Zero screens. All imagination. The flagship is where the
-                Boredom Initiative comes to life every Saturday.
+                This is ultimately where the magic happens, a cardboard box
+                becomes a rocket ship and a pile of clay becomes a new
+                species.
               </p>
               <a
                 href="tel:7813260112"
@@ -535,7 +535,13 @@ export default function Home() {
               <em className="text-blue">spot.</em>
             </h2>
           </Reveal>
-          <Reveal delay={0.2} className="mt-10">
+          <Reveal delay={0.15} className="mt-10">
+            <p className="mx-auto max-w-2xl text-lg text-bone/95 md:text-xl">
+              We are here to help your children, reclaim their focus, and
+              help their imagination grow every day.
+            </p>
+          </Reveal>
+          <Reveal delay={0.3} className="mt-10">
             <MagneticButton href="/register" color="ink" size="lg">
               Get my ticket <ArrowRight className="ml-1 inline" size={20} />
             </MagneticButton>
