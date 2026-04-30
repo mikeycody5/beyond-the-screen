@@ -163,15 +163,103 @@ export default function PressPage() {
 
       {/* INFOGRAPHIC — TRU LEGACY */}
       <section className="border-b-[3px] border-ink bg-cream py-16 md:py-24">
-        <div className="mx-auto max-w-2xl px-5 md:px-8">
-          <Image
-            src="/toysrusinfographic.png"
-            alt="Toys R Us history infographic: founded 78 years ago in Washington D.C., 65,000 employees, 1,600 stores worldwide at its peak, filed for bankruptcy in 2017 with 5 billion in debt and 11.1 billion in annual sales, known as the shop for birthdays / holidays / gift shopping, slogan 'You'll never outgrow us'"
-            width={1080}
-            height={2700}
-            unoptimized
-            className="w-full h-auto rounded-[40px] border-[3px] border-ink chunky"
-          />
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="grid gap-10 md:grid-cols-12 md:items-start md:gap-14">
+            {/* LEFT: Infographic */}
+            <div className="md:col-span-5">
+              <Image
+                src="/toysrusinfographic.png"
+                alt="Toys R Us history infographic: founded 78 years ago in Washington D.C., 65,000 employees, 1,600 stores worldwide at its peak, filed for bankruptcy in 2017 with 5 billion in debt and 11.1 billion in annual sales, known as the shop for birthdays / holidays / gift shopping, slogan 'You'll never outgrow us'"
+                width={1080}
+                height={2700}
+                unoptimized
+                className="w-full h-auto rounded-[40px] border-[3px] border-ink chunky"
+              />
+            </div>
+
+            {/* RIGHT: Recap pulled from elsewhere on the press page */}
+            <div className="md:col-span-7 md:sticky md:top-24">
+              <div className="flex flex-wrap items-center gap-3">
+                <Sticker color="pink" rotate={-6}>
+                  ★ The Story
+                </Sticker>
+                <Sticker color="blue" rotate={4}>
+                  At a glance
+                </Sticker>
+              </div>
+
+              <Reveal>
+                <h2 className="mt-6 font-display text-5xl leading-[0.95] text-ink md:text-6xl">
+                  Where we&apos;ve been,
+                  <br />
+                  <em className="text-pink">and where we&apos;re going.</em>
+                </h2>
+              </Reveal>
+
+              <Reveal delay={0.15}>
+                <p className="mt-6 text-lg text-ink md:text-xl">
+                  This act marks a very big shift in the toy and digital
+                  world. The brand recognizes that its true value lies not
+                  in competing with Amazon&apos;s logistics, but in providing
+                  an{" "}
+                  <span className="squiggle font-bold text-ink">
+                    experiential sanctuary
+                  </span>{" "}
+                  that cannot be replicated online.
+                </p>
+              </Reveal>
+
+              <div className="mt-8 space-y-4">
+                <Reveal delay={0.25}>
+                  <div className="rounded-[24px] border-[3px] border-ink bg-pink p-6 text-bone chunky">
+                    <p className="text-xs font-bold uppercase tracking-widest text-orange">
+                      Founder · Charles Lazarus
+                    </p>
+                    <p className="mt-3 italic">
+                      &ldquo;Listening to the customer is probably the best
+                      thing in the world. Almost all that we have here and
+                      now, and how we expanded the business came from the
+                      customer saying &lsquo;I need.&rsquo; or &lsquo;I
+                      want&rdquo;.
+                    </p>
+                  </div>
+                </Reveal>
+
+                <Reveal delay={0.32}>
+                  <div className="rounded-[24px] border-[3px] border-ink bg-blue p-6 text-bone chunky">
+                    <p className="text-xs font-bold uppercase tracking-widest text-orange">
+                      The Reboot
+                    </p>
+                    <p className="mt-3">
+                      Toys &quot;R&quot; Us is overhauling its physical and
+                      digital footprint to prioritize neurological health
+                      over digital distraction — removing all digital demo
+                      screens from retail locations and designing toys with{" "}
+                      <span className="rounded-md bg-orange px-1.5 font-bold text-ink">
+                        psychologists.
+                      </span>
+                    </p>
+                  </div>
+                </Reveal>
+
+                <Reveal delay={0.4}>
+                  <div className="rounded-[24px] border-[3px] border-ink bg-orange p-6 text-ink chunky">
+                    <p className="text-xs font-bold uppercase tracking-widest text-pink">
+                      Strategy
+                    </p>
+                    <p className="mt-3">
+                      Weekly, device-free workshops in-store. Massive,
+                      unstructured building projects.{" "}
+                      <span className="rounded-md bg-blue px-1.5 font-bold text-bone">
+                        &quot;DMN-Approved&quot;
+                      </span>{" "}
+                      toy sections curated for overstimulated parents.
+                    </p>
+                  </div>
+                </Reveal>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
